@@ -1,0 +1,367 @@
+/* Reset de base */  
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box;  
+    font-family: 'Poppins', monospace;
+}  
+iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+.tajine {
+    width: 150px;
+    position: relative; /* Contrôle précis de la position */
+    animation: bounce 2s infinite;
+    cursor: pointer;
+}
+
+/* Animation rebond */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Position initiale */
+    }
+    50% {
+        transform: translateY(-15px); /* Légère montée */
+    }
+}
+
+
+
+
+
+/* Styles globaux */  
+body {  
+    font-family: 'Arial', sans-serif;  
+    line-height: 1.6;  
+    background-color: #f9f9f9;  
+    color: #333;  
+}  
+
+/* En-tête */  
+
+header {
+    position: relative;
+    padding: 10px 20px;
+    background-color: #6b3f2b;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Sépare les groupes d'éléments */
+    flex-wrap: wrap; /* Permet de passer à la ligne sur petits écrans */
+}
+ul li a:hover {
+    background: #8b5b3b;
+}
+/* Styles pour le sous-menu */  
+.submenu {  
+    width: 200px; /* Ajustez la largeur selon vos besoins */  
+    background: #6b3f2b;  
+    position: fixed;  
+    z-index: 999;  
+    display: none;  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Ajout d'une ombre pour le visuel */  
+    border-radius: 4px;  
+    top: 100%; /* Aligne le sous-menu en bas de l'élément parent */  
+    left: 0; /* Aligne à gauche de l'élément parent */  
+    margin-top: 10px; /* Espacement supplémentaire */  
+}  
+.main-nav{
+    position: absolute;
+    top: 0;
+    right:0;
+}
+ul a{
+    color: black;
+}
+/* Rendre les éléments du sous-menu en bloc */  
+ul.submenu li {  
+    display: block;  
+}  
+
+ul.submenu li a {  
+    padding: 10px 15px; /* Espacement interne pour un meilleur clic */  
+    color: #fff; /* Couleur du texte dans le sous-menu */  
+    display: block; /* Fait que le lien prend tout l'espace */  
+}  
+
+/* État au survol des éléments du sous-menu */  
+ul.submenu li:hover {  
+    background-color: #8b5b3b; /* Couleur d'arrière-plan lors du survol */  
+}  
+
+/* Affiche le sous-menu au survol de l'élément parent */  
+ul li:hover > .submenu {  
+    display: block; /* Affiche le sous-menu au survol */  
+}  
+
+/* Espacement pour les icônes du menu principal */  
+nav ul li i {  
+    margin-right: 5px; /* Espacement pour les icônes du menu principal */  
+} 
+/* Logo */  
+.logo {  
+    font-size: 2em;  
+    text-decoration: none;  
+    color: #fff;  
+}  
+
+/* Styles globaux pour le menu */  
+nav ul {  
+    list-style: none;  
+    padding: 0;  
+}  
+
+nav ul li {  
+    position: relative; /* Nécessaire pour le positionnement du sous-menu */  
+    display: inline-block;  
+    margin: 0 15px;  
+}
+.logo {
+    display: block;
+    margin: 0 auto; /* Centrage horizontal automatique */
+    text-align: center; /* Centrage du contenu (par sécurité) */
+    width: 100%; 
+    margin-bottom: 10px; /* Espacement entre le logo principal et les autres éléments */
+}
+.logo1 {
+    height: 50px;
+    margin-right: 20px;
+    animation: float 5s linear infinite;
+}
+@keyframes float{
+    0%,100%{
+        transform: translateX(0rem);
+    }
+    50%{
+        transform: translateX(3rem);
+    }
+}
+nav.main-nav {
+    flex-grow: 1; /* Laisse la nav occuper tout l'espace restant */
+    display: flex;
+    justify-content: flex-end; /* Aligne les liens à droite */
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Met les liens en ligne */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative; /* Nécessaire pour le sous-menu */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    background: #8b5b3b;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+/* Sections */  
+section {  
+    padding: 20px;  
+    margin: 20px 0;  
+    background-color: #fff;  
+    border-radius: 8px;  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  
+}  
+
+h1, h2 {  
+    color: #6b3f2b;  
+}  
+
+h1 {  
+    margin-bottom: 20px;  
+}  
+
+/* Formulaires */  
+form {  
+    display: flex;  
+    flex-direction: column;  
+}  
+
+label {  
+    margin-bottom: 5px;  
+}  
+
+input, textarea, select {  
+    padding: 10px;  
+    margin-bottom: 15px;  
+    border: 1px solid #ccc;  
+    border-radius: 4px;  
+}  
+
+button {  
+    background-color: #6b3f2b;  
+    color: #fff;  
+    padding: 10px;  
+    border: none;  
+    border-radius: 4px;  
+    cursor: pointer;  
+    font-size: 1em;  
+}  
+
+button:hover {  
+    background-color: #8b5b3b;  
+}  
+
+/* Témoignages */  
+.temoignage {  
+    margin-bottom: 20px;  
+}  
+
+.rating {  
+    color: gold;  
+}  
+
+/* Pied de page */  
+footer {  
+    background-color: #6b3f2b;  
+    color: #fff;  
+    padding: 20px;  
+    text-align: center;  
+}  
+
+.footer-container {  
+    max-width: 800px;  
+    margin: auto;  
+}  
+.logo{
+    width:800px;
+
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centre les éléments verticalement */
+}
+  
+.logo1 {
+    position: absolute; /* Positionnement absolu */
+    top: 10px;          /* Distance par rapport au haut de la page */
+    left: 10px;         /* Distance par rapport au bord gauche */
+    height: 50px;       /* Ajuste la taille selon tes besoins */
+}
+    /* Réseaux sociaux */  
+.social-media a {  
+    margin: 0 10px;  
+    color: #fff;  
+    font-size: 1.5em;  
+}  
+
+/* Responsive */  
+@media (max-width: 768px) {  
+    nav ul li {  
+        display: block;  
+        margin: 10px 0;  
+    }  
+
+    .footer-container {  
+        padding: 10px;  
+    }  
+}
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width:250px;
+    
+}
+
+.submit-search {
+    background-color: #f39c12; /* Couleur du bouton de recherche */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px; /* Espacement entre la barre de recherche et le bouton */
+    border-radius: 5px;
+}
+
+.submit-search i {
+    color: white;
+}
+/* Sous-menu */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    list-style: none;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.submenu li {
+    margin: 0;
+    padding: 0;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    font-size: 16px;
+}
+
+.submenu li a:hover {
+    background-color: #555;
+}
+.navbar-item:hover .submenu {
+    display: block; /* Afficher le menu déroulant au survol */
+}
+
+/* Styles supplémentaires pour la navigation */
+.navbar-item {
+    position: relative;
+}
+.main-nav {
+    display: block;  /* Utilisation de flexbox */
+    justify-content: center; /* Centrer horizontalement les éléments */
+    align-items: center;     /* Centrer verticalement les éléments */
+}
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding:2rem;
+    }
+}
+@media(max-width:768px){
+
+    .submenu{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top:100%;
+        left:0;
+        right: 0;
+    }
+}
