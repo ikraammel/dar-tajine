@@ -126,11 +126,7 @@ nav ul li {
     width: 100%; 
     margin-bottom: 10px; /* Espacement entre le logo principal et les autres éléments */
 }
-.logo1 {
-    height: 50px;
-    margin-right: 20px;
-    animation: float 5s linear infinite;
-}
+
 @keyframes float{
     0%,100%{
         transform: translateX(0rem);
@@ -252,10 +248,14 @@ footer {
 }
   
 .logo1 {
-    position: absolute; /* Positionnement absolu */
-    top: 10px;          /* Distance par rapport au haut de la page */
-    left: 10px;         /* Distance par rapport au bord gauche */
-    height: 50px;       /* Ajuste la taille selon tes besoins */
+    animation: float 5s linear infinite;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 60px;
+    margin-right: 40px; /* augmente l'espace entre logo1 et tajinebot */
+    animation: float 3s linear infinite;
+    z-index: 20; /* au-dessus du texte */
 }
     /* Réseaux sociaux */  
 .social-media a {  
@@ -458,14 +458,6 @@ footer {
     position: relative;
   }
 
-  .logo1 {
-    position: absolute; /* Fixe en haut à gauche */
-    top: 10px;
-    left: 10px;
-    width: 250px; /* Agrandie un peu par rapport à 50px */
-    height: auto;
-    z-index: 10;
-  }
 
   .logo {
     width: 100%;
@@ -491,15 +483,14 @@ footer {
   display: flex;
   align-items: center;
   gap: 5px;
+  padding-left: 70px;
+  margin-top: 80px; /* ou margin-bottom selon besoin */
 }
 
-.tajinebot-wrapper p {
-  display: none; /* Cache le texte sur mobile */
-}
+
 
 @media screen and (max-width: 768px) {
   .logo1 {
-    position: static; /* Retire le positionnement absolu */
     height: 40px;
     margin: 0;
     order: 1; /* Position dans le flex */
@@ -548,11 +539,5 @@ footer {
   }
   50% {
     transform: translateX(10px); /* Réduit l'amplitude sur mobile */
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .logo1 {
-    animation: float 3s linear infinite; /* Animation plus rapide */
   }
 }
