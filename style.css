@@ -365,3 +365,194 @@ footer {
         right: 0;
     }
 }
+.hamburger {
+    display: none;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .main-nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #6b3f2b;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        padding: 1rem;
+        border-radius: 8px;
+        z-index: 999;
+    }
+
+    .main-nav ul.open {
+        display: flex;
+    }
+
+    .main-nav ul li {
+        margin: 10px 0;
+    }
+}
+@media(max-width:768px){
+
+    .submenu{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top:100%;
+        left:0;
+        right: 0;
+    }
+}
+.hamburger {
+    display: none;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .main-nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #6b3f2b;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        padding: 1rem;
+        border-radius: 8px;
+        z-index: 999;
+    }
+
+    .main-nav ul.open {
+        display: flex;
+    }
+
+    .main-nav ul li {
+        margin: 10px 0;
+    }
+}
+@media screen and (max-width: 768px) {
+  
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+
+  .logo1 {
+    position: absolute; /* Fixe en haut à gauche */
+    top: 10px;
+    left: 10px;
+    width: 250px; /* Agrandie un peu par rapport à 50px */
+    height: auto;
+    z-index: 10;
+  }
+
+  .logo {
+    width: 100%;
+    max-width: 250px;
+    
+  }
+
+  .tajine {
+    width: 40px; 
+    margin-top: 15px;
+    animation: bounce 1.5s infinite;
+  }
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.tajinebot-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.tajinebot-wrapper p {
+  display: none; /* Cache le texte sur mobile */
+}
+
+@media screen and (max-width: 768px) {
+  .logo1 {
+    position: static; /* Retire le positionnement absolu */
+    height: 40px;
+    margin: 0;
+    order: 1; /* Position dans le flex */
+  }
+  
+  .hamburger {
+    order: 0; /* Premier élément */
+    margin-right: auto;
+  }
+  
+  .tajinebot-wrapper {
+    order: 2; /* Dernier élément */
+  }
+  
+  .tajine {
+    width: 40px;
+    animation: bounce 1.5s infinite;
+  }
+  
+  .logo {
+    width: 100%;
+    max-width: 250px;
+    margin: 10px auto;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .tajinebot-wrapper p {
+    display: block; /* Affiche le texte sur desktop */
+    color: white;
+    font-size: 14px;
+  }
+  
+  .tajine {
+    width: 80px;
+  }
+  
+  .logo1 {
+    height: 60px;
+    margin-right: 20px;
+  }
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px); /* Réduit l'amplitude sur mobile */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo1 {
+    animation: float 3s linear infinite; /* Animation plus rapide */
+  }
+}

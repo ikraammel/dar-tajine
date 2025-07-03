@@ -12,18 +12,25 @@
         <link rel="icon" type="image/png" sizes="16x16" href="tajine-removebg-preview.png">
     </head>  
 <body>
-    <header>
-        <p>Discutez avec notre tajinebot ci-contre :  </p>
-        <a href="https://app-chat-6pmkuydp7drcwyv7cb7gx6.streamlit.app/"><img src="tajine-removebg-preview.png" alt="" class="tajine"></a>
-        <!-- Logo secondaire positionné à gauche -->
-        <img src="logo1.png" alt="Logo secondaire" class="logo1"><br>
+<header>
+  <div class="header-top">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <img src="logo1.png" alt="Logo secondaire" class="logo1">
+    <div class="tajinebot-wrapper">
+      <p>Discutez avec notre tajinebot :</p>
+      <a href="https://app-chat-6pmkuydp7drcwyv7cb7gx6.streamlit.app/">
+        <img src="tajine-removebg-preview.png" alt="Tajinebot" class="tajine">
+      </a>
+    </div>
+  </div>
+  
+  <!-- Logo principal -->
+  <a href="#home" class="logo">
+    <img src="logo-removebg-preview.png" alt="Logo DAR TAJINE" class="logo">
+  </a>
 
-        <!-- Logo principal -->
-        <a href="#home" class="logo">
-            <br><br><img src="logo-removebg-preview.png" alt="Logo DAR TAJINE" class="logo">
-        </a>
-        <!-- Navigation principale -->
-        <nav class="main-nav">
+  <!-- Navigation principale -->
+  <nav class="main-nav">
             <div class="container">
                 <ul>
                     <!-- Accueil -->
