@@ -488,7 +488,6 @@ footer {
 }
 
 
-
 @media screen and (max-width: 768px) {
   .logo1 {
     height: 40px;
@@ -514,6 +513,37 @@ footer {
     width: 100%;
     max-width: 250px;
     margin: 10px auto;
+  }
+  .submenu {
+    position: static !important; /* annule le positionnement absolu */
+    display: none;
+    background-color: #8b5b3b;
+    box-shadow: none;
+    border-radius: 4px;
+    margin-top: 5px;
+    padding-left: 15px; /* petit décalage visuel */
+  }
+
+  /* Pour afficher le sous-menu quand on clique ou survole (selon JS ou CSS) */
+  .navbar-item.open .submenu,
+  .navbar-item:hover .submenu {
+    display: block;
+  }
+
+  /* Liens dans le sous-menu en vertical */
+  .submenu li {
+    margin: 5px 0;
+  }
+
+  .submenu li a {
+    color: white;
+    font-size: 14px;
+    display: block;
+    padding: 5px 10px;
+  }
+
+  .main-nav ul li {
+    position: static; /* Important pour garder l'ordre naturel */
   }
 }
 
