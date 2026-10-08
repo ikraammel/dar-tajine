@@ -1,10 +1,23 @@
-# Dar Tajine
+# Dar Tajine — Restaurant Website & AI Chatbot
 
-A software project named Dar Tajine.
+A restaurant website for Dar Tajine featuring TajineBot, an AI chatbot designed to answer visitors' questions. The chatbot uses natural language processing with NLTK and a Streamlit-based interactive interface.
 
-## Repository overview
+## Key features
 
-This repository is part of my software engineering portfolio. It contains the implementation and supporting project files for **Dar Tajine**.
+- Restaurant web presence
+- TajineBot question-answering chatbot
+- Natural language processing with NLTK
+- Interactive Streamlit chatbot interface
+- Streamlit Community Cloud hosting for the chatbot
+
+## Technology stack
+
+- HTML
+- CSS
+- JavaScript
+- Python
+- NLTK
+- Streamlit
 
 ## Getting started
 
@@ -14,12 +27,11 @@ Clone the repository:
 git clone https://github.com/ikraammel/dar-tajine.git
 cd dar-tajine
 ```
+Install the dependencies for the relevant application components and configure any required environment variables or external services according to the project source.
 
-Review the source files and dependency manifests for the project's runtime and configuration requirements.
+## About this project
 
-## Project structure
-
-Browse the source folders in this repository to explore the implementation. For projects with separate frontend and backend components, configure and run each component independently.
+Part of my software engineering project portfolio.
 
 ## Author
 
